@@ -1,0 +1,89 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{blindtext}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\begin{document}
+
+
+\section{Informações Estudante}
+\begin{itemize}
+\item Aluno: João Henrique Pereira de Almeida
+\item Matrícula: 15/0132042
+\item Perfil Github: \href{http://github.com/joao-henrique/}{http://github.com/joao-henrique/}
+\item email: joaohenrique.p.almeida@gmail.com
+\item Disciplina: Fundamentos de Sistemas Operacionais
+
+\end{itemize}
+
+
+\section{Informações Importantes}
+\subsection{Repositório}
+O codigo dessa atividade se encontra no repositório abaixo, sob licença MIT
+\url{https://github.com/joao-henrique/FSO-2016.1/tree/master/trab01}
+\subsection{Sistema Operacional}
+
+
+Foi usado para o desenvolvimento das atividades propostas o ElementaryOS - Loki, sistema operacional baseado no Ubuntu 16.04
+
+\subsection{Ambiente de Desenvolvimento }
+- O código encontrado nos três exercicios funcionaram em
+conformidade em ambiente GNU/Linux OS, juntamente com o GCC-5
+
+\section{Instruções}
+
+
+\subsection{Instruções para compilação}
+Aqui será listado os comandos que devem ser executados no terminal, dentro da pasta raiz.
+
+\subsubsection{Questão 03}
+No diretório raiz do projeto utilize os seguintes comandos
+\begin{verbatim}
+$ cd q03/
+$ make
+\end{verbatim}
+
+\subsection{Casos de Teste}
+
+\subsubsection{Questão 03}
+
+Entrada:
+\begin{verbatim}
+ $ Universidade de Brasilia
+\end{verbatim}
+Saída esperada:
+\begin{verbatim}
+ $ Value of dPtr: 7.300000
+ $ Value of number2: 7.300000
+ $ Pointer to number1: 0x7fff90d0d218
+ $ Pointer to dPtr: 0x7fff90d0d218
+ $ Put a string: Universidade de Brasilia
+ $ Compare to s1 and s2: 0
+ $ Concat of s1 and s2: UniversidadeUniversidade
+ $ Len of |UniversidadeUniversidade| is |24|
+\end{verbatim}
+
+\subsection{Limitações conhecidas}
+\subsubsection{Questão 03}
+\begin{itemize}
+\item
+O valor impresso decorrente do enunciado que contempla o item anterior é igual ao
+valor do endereço gravado em dPrt?
+\begin{verbatim}
+    Não, é apenas um ponteiro indicando um endereço
+    \end{verbatim}
+
+\item
+  A execução do item anterior pode provocar algum erro em tempo de execução?
+\begin{verbatim}
+    Sim, pode ocorrer um problema com a concatenação e o tamanho não suficiente \\
+    para armazenar ambas strings
+\end{verbatim}
+
+
+
+\end{itemize}
+
+\end{document}
