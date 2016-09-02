@@ -117,7 +117,7 @@ $ make
 
 \subsubsection{Questão 02}
 \begin{itemize}
-  \item Casos de testes
+  \item
   \begin{itemize}
     \item Opção decrescente \\
     Entrada:
@@ -154,8 +154,10 @@ $ make
     \end{verbatim}
   \end{itemize}
 
+  \item Caso no array de informações
   \begin{itemize}
     \item Opção com entrada com letras \\
+    O sistema entende as letras como zero(0) e organiza o restante
     Entrada:
     \begin{verbatim}
       $ ./run  J 8 7 T 5 6 1 2 3
@@ -165,6 +167,49 @@ $ make
       0 0 1 2 3 5 6 7 8
     \end{verbatim}
   \end{itemize}
+
+
+  \item Opção de ajuda
+  \begin{itemize}
+    \item Entrada
+    \begin{verbatim}
+      $ ./run  -h
+    \end{verbatim}
+    Saída esperada:
+    \begin{verbatim}
+    Opções
+    -crescent, 			 'Listar em ordem crescente'
+    -decreasing, 		 'Listar em ordem decrescente'
+    -help 		       'Mostrar Exemplo'Exemplos:
+    Example:
+      ./run  9 8 7 4 5 6 1 2 3
+	ou:   ./run -crescent  9 8 7 4 5 6 1 2 3
+	ou:	  ./run -decreasing  9 8 7 4 5 6 1 2 3
+	ou:	  ./run -help
+\end{verbatim}
+\end{itemize}
+
+
+\item Opção de ajuda sempre terá preferência na execução dos comandos
+\begin{itemize}
+  \item Entrada
+  \begin{verbatim}
+    $ ./run -h  9 8 7 4 5 6 1 2 3
+  \end{verbatim}
+  Saída esperada:
+  \begin{verbatim}
+  Opções
+  -crescent, 			 'Listar em ordem crescente'
+  -decreasing, 		 'Listar em ordem decrescente'
+  -help 		       'Mostrar Exemplos':
+  Example:
+    ./run  9 8 7 4 5 6 1 2 3
+ou:   ./run -crescent  9 8 7 4 5 6 1 2 3
+ou:	  ./run -decreasing  9 8 7 4 5 6 1 2 3
+ou:	  ./run -help
+\end{verbatim}
+\end{itemize}
+
 
 
 

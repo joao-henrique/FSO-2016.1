@@ -25,16 +25,12 @@ void print_man(){
     printf("-crescent, 			 'Listar em ordem crescente'\n");
     printf("-decreasing, 		 'Listar em ordem decrescente'\n");
     printf("-help 		       'Mostrar Exemplo'");
-    printf("crescent order\n");
-    printf("All option \n");
-    printf("\t-d, \t\t\tsort in crescent order\n");
-    printf("\t-r, \t\t\tsort in decreasing order\n");
-    printf("\t-h, --help \t\tshow this help\n");
     printf("\n");
     printf("Example:\n");
-    printf("\t\t./run -d 4 5 34 3 9 1 10\n");
-    printf("\tor:\t./run -r 4 5 34 3 9 1 10\n");
-    printf("\tor:\t./run 4 5 34 3 9 1 10\n");
+    printf("\t\t./run  9 8 7 4 5 6 1 2 3\n");
+    printf("\tou:\t./run -crescent  9 8 7 4 5 6 1 2 3\n");
+    printf("\tou:\t./run -decreasing  9 8 7 4 5 6 1 2 3\n");
+    printf("\tou:\t./run -help \n");
     printf("\n");
 }
 
