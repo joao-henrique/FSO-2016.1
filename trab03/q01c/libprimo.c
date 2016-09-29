@@ -1,4 +1,4 @@
-#include "libprime.h"
+#include "libprimo.h"
 #include <stdlib.h>
 #include <time.h>
 #include <math.h>
@@ -6,17 +6,19 @@
 #define NOT_PRIME 10
 #define PRIME 0
 
-int create_prime(){
+int gera_primo(){
 
   unsigned int number = NOT_PRIME;
-  while (test_prime(number) != PRIME){
+  while (testa_primo(number) != PRIME){
     srand(time(NULL));
     number = rand() % UINT_MAX;
   }
+
   return number;
+
 }
 
-int test_prime(int prime){
+int testa_primo(int prime){
   int test(int prime){
     double root_n;
     root_n = ceil(sqrt(prime));
