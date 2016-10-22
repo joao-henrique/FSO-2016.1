@@ -1,0 +1,78 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{blindtext}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\begin{document}
+
+\section{Informações Estudante}
+\begin{itemize}
+\item Aluno: João Henrique Pereira de Almeida
+\item Matrícula: 15/0132042
+\item Perfil Github: \href{http://github.com/joao-henrique/}{http://github.com/joao-henrique/}
+\item email: joaohenrique.p.almeida@gmail.com
+\item Disciplina: Fundamentos de Sistemas Operacionais
+\end{itemize}
+
+
+\section{Informações Importantes}
+\subsection{Repositório}
+O código dessa atividade se encontra no repositório abaixo, sob licença MIT
+\url{https://github.com/joao-henrique/FSO-2016.1/tree/master/trab04}
+\subsection{Sistema Operacional}
+
+Foi usado para o desenvolvimento das atividades propostas o ElementaryOS - Loki, sistema operacional baseado no Ubuntu 16.04
+
+\subsection{Ambiente de Desenvolvimento }
+- O código encontrado nos três exercicios funcionaram em
+conformidade em ambiente GNU/Linux OS, juntamente com o GCC-5
+
+\section{Instruções}
+\subsection{Instruções para compilação}
+Aqui será listado os comandos que devem ser executados no terminal, dentro da pasta raiz.
+
+\subsubsection{Questão 02}
+No diretório raiz do projeto utilize os seguintes comandos
+\begin{verbatim}
+$ make
+\end{verbatim}
+Será listado no terminal instruções que auxiliaram no uso.\\
+Um exempo que pode ser testado:
+\begin{verbatim}
+$ ./buscador dir/show/ test 3
+\end{verbatim}
+
+\subsection{Limitações conhecidas}
+\subsubsection{Questão 02}
+\begin{itemize}
+  \item Não há um tratamento dos caminhos das pastas selecionadas
+\end{itemize}
+
+\section{Questão discursiva}
+Norma que pressupõe
+que o sistema operacional suporta os mesmos
+recursos de segurança básicos encontrados na maioria dos sistemas de arquivos
+UNIX. É possível definir duas distinções independentes entre arquivos\\
+ - Compartilhaveis vs. Não Compartilhaveis \\
+ - Variável vs. Estática. \\
+Em geral, os ficheiros que diferem em qualquer um destes aspectos devem ser
+localizados em pastas diferentes. Isto torna mais fácil
+para armazenar arquivos com diferentes características de uso em diferentes
+sistemas de arquivos.\\
+Arquivos compartilhaveis são aqueles que podem ser armazenadas utilizando
+um hospedeiro. Por exemplo os arquivos no diretório
+home do usuário são compartilháveis enquanto arquivos de bloqueio do dispositivo não são.
+arquivos estático incluem binários, bibliotecas, arquivos de documentação e
+outros arquivos que não mudam sem sistemaa intervenção do administrador.
+Esta norma permite:\\
+- Prever a localização de arquivos instalados e diretórios \\
+- Definir a especificação dos princípios orientadores para cada área do sistema de arquivos\\
+- Especificando os arquivos mínimos e diretórios necessários,\\
+- Enumerando exceções aos princípios \\
+
+
+
+
+\end{document}
